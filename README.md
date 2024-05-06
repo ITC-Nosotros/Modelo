@@ -1,8 +1,13 @@
-**MODELO PARA RECOMENDACIÓN DE CARROS**
+# Modelo Carros
 
-El objetivo de este proyecto es generar un algoritmo que implemente un modelo predicitvo para el precio de los vehiculos basado en la cantidad monetaria y el carro definido por el usuario.
-Además, se implenta un modelo de recomendación teniendo en cuenta el precio, el modelo, el año modelo y la ubicación escogida por el usuario. 
+<p>El objetivo de este proyecto es generar un modelo de recomendación y predicción del precio de carros en Colomobia. La idea es predecir el precio del vehiculo escogido por el usuario, además de recomendar carros según el modelo escogido, el precio, su kilometraje y el año del modelo, esto con el fin de facilitarle al usuario la busqueda de su vehiculo ideal.
 
-La información para entrenar a estos modelos, es obtenida mediante Web Scrapping realizado a la pagina tucarro.com y Mercado Libre. 
+La información para entrenar el modelo fue obtenido mediante Web Scrapping realizado a las paginas Tucarro.com y Mercado Libre. 
 
-Dentro del repositorio, se visualiza el codigo implementado para la creación del proyecto.
+</p>
+
+#### Herramientas
+- Python
+- Google Colab
+- Selenium
+- Django
