@@ -1,0 +1,117 @@
+--------------  INICIO DE LOGS 15052024  -------------- 
+
+lineas por cada archivo: Tucarro_02042024_chevrolet.csv(240, 8)
+lineas por cada archivo: Tucarro_02042024_mazda.csv(240, 8)
+lineas por cada archivo: Tucarro_02042024_renault.csv(240, 8)
+lineas por cada archivo: Tucarro_02042024_Susuki.csv(240, 8)
+lineas por cada archivo: Tucarro_02042024_Toyota.csv(240, 8)
+lineas por cada archivo: Tucarro_04042024_chevrolet.csv(240, 8)
+lineas por cada archivo: Tucarro_04042024_mazda.csv(240, 8)
+lineas por cada archivo: Tucarro_04042024_renault.csv(240, 8)
+lineas por cada archivo: Tucarro_04042024_Susuki.csv(192, 8)
+lineas por cada archivo: Tucarro_04042024_Toyota.csv(240, 8)
+lineas por cada archivo: Tucarro_05042024_chevrolet.csv(240, 8)
+lineas por cada archivo: Tucarro_05042024_mazda.csv(240, 8)
+lineas por cada archivo: Tucarro_05042024_renault.csv(240, 8)
+lineas por cada archivo: Tucarro_05042024_Susuki.csv(192, 8)
+lineas por cada archivo: Tucarro_05042024_Toyota.csv(192, 8)
+lineas por cada archivo: Tucarro_08032024_chevrolet.csv(432, 8)
+lineas por cada archivo: Tucarro_08032024_Susuki.csv(385, 8)
+lineas por cada archivo: Tucarro_08032024_toyota.csv(432, 8)
+lineas por cada archivo: Tucarro_08042024_mazda.csv(192, 8)
+lineas por cada archivo: Tucarro_08042024_renault.csv(240, 8)
+lineas por cada archivo: Tucarro_09042024_chevrolet.csv(240, 8)
+lineas por cada archivo: Tucarro_09042024_mazda.csv(240, 8)
+lineas por cada archivo: Tucarro_09042024_renault.csv(240, 8)
+lineas por cada archivo: Tucarro_09042024_Susuki.csv(192, 8)
+lineas por cada archivo: Tucarro_09042024_Toyota.csv(192, 8)
+lineas por cada archivo: Tucarro_10042024_chevrolet.csv(144, 8)
+lineas por cada archivo: Tucarro_10042024_mazda.csv(192, 8)
+lineas por cada archivo: Tucarro_10042024_renault.csv(240, 8)
+lineas por cada archivo: Tucarro_10042024_Susuki.csv(192, 8)
+lineas por cada archivo: Tucarro_10042024_Toyota.csv(192, 8)
+lineas por cada archivo: Tucarro_11032024_chevrolet.csv(432, 8)
+lineas por cada archivo: Tucarro_11032024_mazda.csv(384, 8)
+lineas por cada archivo: Tucarro_11032024_renault.csv(432, 8)
+lineas por cada archivo: Tucarro_11032024_Susuki.csv(288, 8)
+lineas por cada archivo: Tucarro_11042024_chevrolet.csv(240, 8)
+lineas por cada archivo: Tucarro_12032024_chevrolet.csv(384, 8)
+lineas por cada archivo: Tucarro_12032024_renault.csv(432, 8)
+lineas por cada archivo: Tucarro_12042024_mazda.csv(240, 8)
+lineas por cada archivo: Tucarro_12042024_Susuki.csv(192, 8)
+lineas por cada archivo: Tucarro_12042024_Toyota.csv(192, 8)
+lineas por cada archivo: Tucarro_19032024_chevrolet.csv(240, 8)
+lineas por cada archivo: Tucarro_19032024_mazda.csv(240, 8)
+lineas por cada archivo: Tucarro_19032024_renault.csv(240, 8)
+lineas por cada archivo: Tucarro_19032024_Susuki.csv(336, 8)
+lineas por cada archivo: Tucarro_19032024_Toyota.csv(288, 8)
+lineas por cada archivo: Tucarro_20032024_chevrolet.csv(192, 8)
+lineas por cada archivo: Tucarro_20032024_mazda.csv(96, 8)
+lineas por cada archivo: Tucarro_20032024_renault.csv(144, 8)
+lineas por cada archivo: Tucarro_20032024_Susuki.csv(336, 8)
+lineas por cada archivo: Tucarro_20032024_toyota.csv(336, 8)
+
+ ----  ----  ----  Cabeceras  ----  ----  ---- 
+Columnas del Archivo_temp1.csv
+ Index(['car_model', 'price', 'year_model', 'kms', 'colour', 'fuel_type',
+       'location', 'url_car'],
+      dtype='object')
+
+ ----  ----  ----  Datos Lineas  ----  ----  ---- 
+Cantidad lineas temp1: (12865, 8)
+Cantidad de lineas nulas de car_model: 86
+Cantidad de lineas eliminadas de car_model: 169
+Cantidad de lineas nulas de colour: 3266
+Cantidad de lineas eliminadas de colour: 3266
+Se eliminaron un total de: 3435
+Cantidad de filas exitentes en temp2: (9430, 8)
+
+ ----  ----  ----  head de las 10 primeras lineas  ----  ----  ---- 
+         car_model       price  year_model     kms    colour fuel_type  \
+0   Chevrolet Onix  52.900.000        2021  38,500      Gris  Gasolina   
+1   Chevrolet Onix  40.000.000        2016  47,096    Blanco  Gasolina   
+2   Chevrolet Onix  65.000.000        2023   4,700    Blanco  Gasolina   
+3   Chevrolet Onix  69.000.000        2021  17,310  Plateado  Gasolina   
+4   Chevrolet Onix  65.000.000        2021  33,627      Gris  Gasolina   
+5   Chevrolet Onix  71.990.000        2023       0      Gris  Gasolina   
+6   Chevrolet Onix  48.000.000        2020  41,921    Blanco  Gasolina   
+8   Chevrolet Onix  47.990.000        2020  24,645      Gris  Gasolina   
+9   Chevrolet Onix  67.990.000        2023  13,530    Blanco  Gasolina   
+13  Chevrolet Onix  38.400.000        2016  49,000  Plateado  Gasolina   
+
+           location                                            url_car  
+0         Antioquia  https://articulo.tucarro.com.co/MCO-1409021891...  
+1            Nariño  https://articulo.tucarro.com.co/MCO-2257666376...  
+2         Antioquia  https://articulo.tucarro.com.co/MCO-1405115767...  
+3   Valle Del Cauca  https://articulo.tucarro.com.co/MCO-2275306018...  
+4         Risaralda  https://articulo.tucarro.com.co/MCO-1404317531...  
+5       Bogotá D.C.  https://articulo.tucarro.com.co/MCO-1409171115...  
+6            Boyaca  https://articulo.tucarro.com.co/MCO-2303902204...  
+8         Antioquia  https://articulo.tucarro.com.co/MCO-1409082105...  
+9         Antioquia  https://articulo.tucarro.com.co/MCO-2293683038...  
+13      Bogotá D.C.  https://articulo.tucarro.com.co/MCO-2267166902...  
+
+ ----  ----  ----  tail de las 10 ultimas lineas  ----  ----  ---- 
+            car_model        price  year_model     kms  colour fuel_type  \
+12849  Toyota Corolla  102.000.000        2020  52,000   Negro  Gasolina   
+12853  Toyota Corolla   95.000.000        2023  17,000    Rojo   Híbrido   
+12854  Toyota Corolla   91.000.000        2020  65,000    Gris  Gasolina   
+12855  Toyota Corolla  120.500.000        2024       0  Blanco  Gasolina   
+12856  Toyota Corolla  161.900.000        2024       0    Gris  Gasolina   
+12857  Toyota Corolla  157.000.000        2024       0  Blanco   Híbrido   
+12858  Toyota Corolla   68.000.000        2019  77,000  Blanco  Gasolina   
+12860  Toyota Corolla   72.500.000        2019  69,000  Blanco  Gasolina   
+12861  Toyota Corolla  129.000.000        2022  26,000    Azul   Híbrido   
+12864  Toyota Corolla  122.500.000        2023   5,300    Gris  Gasolina   
+
+           location                                            url_car  
+12849  Cundinamarca  https://articulo.tucarro.com.co/MCO-2169325596...  
+12853     Antioquia  https://articulo.tucarro.com.co/MCO-2219630158...  
+12854        Boyaca  https://articulo.tucarro.com.co/MCO-2275311012...  
+12855     Atlántico  https://articulo.tucarro.com.co/MCO-1395389291...  
+12856     Antioquia  https://articulo.tucarro.com.co/MCO-2252994012...  
+12857     Antioquia  https://articulo.tucarro.com.co/MCO-1404842047...  
+12858  Cundinamarca  https://articulo.tucarro.com.co/MCO-1395846947...  
+12860   Bogotá D.C.  https://articulo.tucarro.com.co/MCO-1395042627...  
+12861   Bogotá D.C.  https://articulo.tucarro.com.co/MCO-1402662029...  
+12864   Bogotá D.C.  https://articulo.tucarro.com.co/MCO-1402424813...  
