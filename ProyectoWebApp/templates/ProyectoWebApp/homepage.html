@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'homepage.css' %}">
+    <!---<script src="https://cdn.tailwindcss.com/3.4.3"></script>-->
+    <title> BuscaCarro.</title>
+   
+  </head>
+  <body>
+    <!------------------------>
+    <!-- ENCABEZADO-->
+    <!------------------------>
+    <header class="container-fluid bg-success d-flex justify-content-center">
+      <p class="text-light mb-0  p-2 fs-4">Escuela Instituto Tecnico Central - ETITC</p>
+    </header>
+    <!------------------------>
+    <!-- BARRA NAVEGACIÓN-->
+    <!------------------------>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-3" id="menu">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'HomePage' %}">
+          <span class="text-dark fs-5 fw-bold">LauraRecomienda.</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'HomePage' %}">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="{% url 'Contact' %}">Contactenos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!------------------------>
+    <!-- Formullario-->
+    <!------------------------>
+    <div class="container" id="contenedor-formulario">
+      <form method="POST">
+        {% csrf_token %}
+          <div class="mb-3">
+            <label for="InputCar" class="form-label">Escoge un carro:</label>
+            <select class="form-select" name="car_choice" aria-label="Default select example">
+              <option selected>Seleccione...</option>
+              <option value="Mazda 2">Mazda 2</option>
+              <option value="Toyota Corolla">Toyota Corolla</option>
+              <option value="Suzuki Swift">Suzuki Swift</option>
+              <option value="Renault Duster">Renault Duster</option>
+              <option value="Chevrolet Onix">Chevrolet Onix</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="InputLocation" class="form-label">Locación:</label>
+            <select class="form-select" name="location" aria-label="Location">
+              <option selected>Seleccione...</option>
+              <option value="Antioquia">Antioquia</option>
+              <option value="Nariño">Nariño</option>
+              <option value="Valle Del Cauca">Valle del Cauca</option>
+              <option value="Risaralda">Risaralda</option>
+              <option value="Boyaca">Boyaca</option>
+              <option value="Bogotá D.C.">Bogotá D.C.</option>
+              <option value="Cundinamarca">Cundinamarca</option>
+              <option value="Atlántico">Atlántico</option>
+              <option value="Caldas">Caldas</option>
+              <option value="Norte De Santander">Norte Santander</option>
+              <option value="Santander">Santander</option>
+              <option value="Meta">Meta</option>
+              <option value="Cesar">Cesar</option>
+              <option value="Huila">Huila</option>
+              <option value="Tolima">Tolima</option>
+              <option value="Córdoba">Córdoba</option>
+              <option value="Bolívar">Bolívar</option>
+              <option value="Casanare">Casanare</option>
+              <option value="Quindio">Quindio</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="customRange1" class="form-label">Rango Precio:</label>
+            <div class="d-flex justify-content-between">
+              <span class="range-values" id="minValue1">10.000.000</span>
+              <input type="range"  name="price_range" class="form-range" min="10000000" max="400000000" step="10000000" id="customRange1" oninput="actualizarValorPrecio(1)">
+              <span class="range-values" id="maxValue1">400.000.000</span>
+            </div>
+            <div>
+              Valor seleccionado: <span id="valorPrecio1">0</span>
+            </div>
+          </div>
+        
+          <div class="mb-3">
+            <label for="customRange2" class="form-label">Rango Kilometraje:</label>
+            <div class="d-flex justify-content-between">
+              <span class="range-values" id="minValue2">0</span>
+              <input type="range"  name="km_range" class="form-range" min="0" max="400000" step="1000" id="customRange2" oninput="actualizarValorPrecio(2)">
+              <span class="range-values" id="maxValue2">400.000</span>
+            </div>
+            <div>
+              Valor seleccionado: <span id="valorPrecio2">0</span>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="customRange3" class="form-label">Rango Año Modelo:</label>
+            <div class="d-flex justify-content-between">
+              <span class="range-values" id="minValue3">2000</span>
+              <input type="range" name="yearmodel_range"  class="form-range" min="2000" max="2024" step="1" id="customRange3" oninput="actualizarValorPrecio(3)">
+              <span class="range-values" id="maxValue3">2024</span>
+            </div>
+            <div>
+              Valor seleccionado: <span id="valorPrecio3">0</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+
+    <div class="container" id="contenedor-formulario">
+      {% if success %}
+          <div class="alert alert-success" role="alert">
+              ¡Los datos han sido guardados exitosamente!
+          </div>
+          <h3>Precio Predicho: {{ predicted_price }}</h3>
+          <h4>Autos Similares Recomendados:</h4>
+          <table border="1">
+            <thead>
+                <tr>
+                    <th>Modelo</th>
+                    <th>Ubicación</th>
+                    <th>Precio</th>
+                    <th>Kilometraje</th>
+                    <th>Año del Modelo</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for index, car in similar_cars.iterrows %}
+                    <tr>
+                        <td>{{ car.car_model }}</td>
+                        <td>{{ car.location }}</td>
+                        <td>{{ car.price }}</td>
+                        <td>{{ car.kms }}</td>
+                        <td>{{ car.year_model }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+      {% endif %}
+  </div>
+  
+    <script>
+      function actualizarValorPrecio(id) {
+        const slider = document.getElementById(`customRange${id}`);
+        const output = document.getElementById(`valorPrecio${id}`);
+        output.textContent = new Intl.NumberFormat().format(slider.value);
+      }
+      
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

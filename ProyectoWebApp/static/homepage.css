@@ -1,0 +1,19 @@
+body {
+ font-family: 'Montserrat', sans-serif;
+ overflow-x: hidden;
+}
+
+/* ================ MENU ======================= */
+#menu a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+
+
+/* ================ FORMULARIO ======================= */
+
+#form {
+  margin-right: 10px;
+}
+
