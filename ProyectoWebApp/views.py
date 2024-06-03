@@ -42,7 +42,7 @@ def homepage(request):
             # Convertir los datos del usuario en un DataFrame
         test_data_recommended = pd.DataFrame([user_input])
 
-            # Obtener coches similares y precio predicho
+            # Obtener coches similares y precio predicho j
         similar_cars, predicted_price = recommend_and_predict(test_data_recommended, data, model)
 
         success = True
